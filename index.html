@@ -4,22 +4,40 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home</title>
+    <!-- Font OooBaby -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Prata&display=swap" rel="stylesheet">
+    <!-- Font PoiretOne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
     <!-- This is the Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-
     <link rel="stylesheet" href="CSS/styles.css" />
 
+    <title>home</title>
 </head>
 
 
 <!-- This is my header -->
 
 <body>
+    <!-- This is the Responsive Nav Bar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Is this working?</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
     <nav>
 
@@ -41,9 +59,9 @@
         </div>
         <!-- This is the Header -->
         <div id="my-portfolio">
-            <h1 style="font-family: rabbit">Hello!</h1>
-
+            <h1 class="PoiretOne">Hello!</h1>
         </div>
+
 
 
 
@@ -56,15 +74,16 @@
 
 
     <!-- This is the body -->
+
     <div id="content">
 
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <p class="big">I'm <span style="color: purple; font-weight: bold;">Amanda
+                    <p class="big"><span style="color: #895A83; font-weight: bold;">I'm Amanda
                             Heer</span></p>
 
-                    <p class="big"> I am firstly a teacher of 8 years and have enjoyed my time in education.
+                    <p class="p1"> I am firstly a teacher of 8 years and have enjoyed my time in education.
 
                         I have recently completed the UX/UI design bootcamp through the University of Utah and look
                         forward to applying my skills into a UX/UI role.
@@ -101,7 +120,8 @@
                         class="btn btn-outline-secondary btnStyle">LinkedIn</a>
                 </div>
                 <div class="col-1">
-                    <button type="button" class="btn btn-outline-secondary btnStyle">Resume</button>
+                    <a href="https://drive.google.com/file/d/1DqRLTXWOeUZrFO53Ml0_1LGNKiJImzC-/view?usp=share_link"
+                        type="button" class="btn btn-outline-secondary btnStyle">Resume</a>
                 </div>
                 <div class="col-1">
                     <button type="button" class="btn btn-outline-secondary btnStyle">Contact</button>
@@ -119,6 +139,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <!-- This is the JS -->
+    <script src="JS/index.js"></script>
 </body>
 
 </html>

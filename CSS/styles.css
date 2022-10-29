@@ -368,3 +368,14 @@ img.hover-shadow {
 }
 
 /* This is the end of the Lightbox */
+
+/* My Story Page */
+.pMyStory {
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Poiret One', cursive;
+    font-weight: normal;
+    color: #f49896;
+    padding: 2px 10px;
+
+}

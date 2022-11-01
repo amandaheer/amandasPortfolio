@@ -214,6 +214,13 @@ footer {
 
 }
 
+/* This is the footer buttons */
+.btnStyle {
+    color: #895A83;
+    background-color: #E1888E;
+    border: 1px solid #ffffff;
+}
+
 
 
 
@@ -240,7 +247,6 @@ footer {
 
 
 
-/* About Page: LightBox */
 .row>.column {
     padding: 0 8px;
 }

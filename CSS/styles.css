@@ -188,10 +188,17 @@ p {}
 
 
 img {
-    width: 50%;
-    display: block;
-    margin: auto;
+    width: 20%;
+    display: inline-block;
 
+
+}
+
+
+
+.images {
+    display: flex;
+    justify-content: center;
 }
 
 /* copyright2022 */
@@ -242,10 +249,7 @@ footer {
     text-align: center;
 }
 
-
-
-
-
+/* this is the lightbox */
 
 .row>.column {
     padding: 0 8px;

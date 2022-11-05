@@ -261,6 +261,10 @@ footer {
     clear: both;
 }
 
+.aboutpics {
+    margin: 0px 5px;
+}
+
 /* Create four equal columns that floats next to eachother */
 .column {
     float: left;
@@ -371,6 +375,8 @@ img.demo {
 
 img.hover-shadow {
     transition: 0.3s;
+    width: 100%;
+    margin: 0px auto;
 }
 
 .hover-shadow:hover {

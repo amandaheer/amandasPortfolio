@@ -167,7 +167,7 @@ p {}
 #my-portfolio {
     background-color: #ffffff;
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: px;
     color: #895A83;
     font-family: 'Poiret One', cursive;
 }
@@ -231,8 +231,18 @@ footer {
 }
 
 
+.btnStyle:hover {
+    background-color: #895A83;
+}
+
 /* Portfolio Page */
 /* Cards */
+
+.text-center {
+    display: flex;
+    justify-content: center;
+}
+
 .content {
     padding: 50px;
 }
@@ -249,6 +259,12 @@ footer {
     text-align: center;
 }
 
+.cardcontainer {
+    margin: 50px 50px;
+}
+
+
+
 /* this is the lightbox */
 
 .row>.column {
@@ -262,7 +278,7 @@ footer {
 }
 
 .aboutpics {
-    margin: 0px 5px;
+    margin: 0px 5px 50px 5px;
 }
 
 /* Create four equal columns that floats next to eachother */
@@ -395,3 +411,6 @@ img.hover-shadow {
     padding: 2px 10px;
 
 }
+
+/* Media Quary for the Footer: Small Screen */
+@media only screen and (max-width: 600px) {}

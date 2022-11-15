@@ -3,7 +3,6 @@
 
 body {
     /* font family */
-    font-family: 'Oooh Baby', cursive;
     font-family: 'Prata', serif;
     background-color: #ffffff;
     min-height: 100vh;
@@ -273,7 +272,17 @@ footer {
     margin: 50px 50px;
 }
 
+/* this is the card button: View My Project */
+.cardbutton {
+    background-color: #895A83;
+    border: 2px solid #895A83;
+}
 
+.cardbutton:hover {
+    background-color: #E1888E;
+    border: 2px solid #ffffff;
+
+}
 
 /* this is the lightbox */
 

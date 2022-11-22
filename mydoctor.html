@@ -2,21 +2,249 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font OooBaby -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Prata&display=swap" rel="stylesheet">
+    <!-- Font PoiretOne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+    <!-- This is the Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/styles.css" />
+
+    <title>home</title>
 </head>
 
+
+<!-- This is my header -->
+
 <body>
+    <!-- This is the Responsive Nav Bar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <p>Hello</p>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">My Story</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- This is the Header -->
+    <div id="my-portfolio">
+        <h1 class="PoiretOne">My Doctor App</h1>
+    </div>
+    <header>
+        <h2 id="section title"></h2>
+    </header>
+    </nav>
+
+
+
+
+    <!-- Images used to open the lightbox -->
+    <div class="row aboutpics">
+        <div class="column">
+            <img src="images/mydoctor1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="images/mydoctor2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="images/mydoctor3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="images/mydoctor4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/hawaiiwide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/farmwide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/gumwide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/viewwide.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="images">
+
+                <img class="demo" src="images/hawaiithumb.jpg" onclick="currentSlide(1)" alt="Kona, Hawaii">
+
+
+
+                <img class="demo" src="images/farmthumb.jpg" onclick="currentSlide(2)" alt="At The Farm">
+
+
+
+                <img class="demo" src="images/gumthumb.jpg" onclick="currentSlide(3)" alt="Gum Wall, WA">
+
+
+
+                <img class="demo" src="images/viewthumb.jpg" onclick="currentSlide(4)" alt="Kona, Hawaii">
+
+            </div>
+        </div>
+    </div>
+    <!-- This is the end of the lightbox -->
+
+    <!-- This is the body -->
+
+    <div id="content">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-15">
+                    <a class="mdlink"
+                        href="https://docs.google.com/presentation/d/17tBg_WJgymNbba7k-xT5WiUu_-Rn_WER/edit?usp=sharing&ouid=112817826893234894945&rtpof=true&sd=true">Visit
+                        MyDoctor Project</a>
+                    <p class="big"><span style="color: #895A83; font-weight: bold;">Introduction</span></p>
+
+                    <p class="pMyStory">Our team decided to create an app that would help people be able to find a rated
+                        doctor and book an appointment with that doctor. This will help users meet thier specific health
+                        needs in one organized location. As UX Designers, we planned on conducting an interview plan and
+                        using the data we collect to create a final digital prototype that is user friendly.
+
+                    </p>
+                    <p class="big"><span style="color: #895A83; font-weight: bold;">User Research</span></p>
+
+                    <p class="pMyStory"> Over the next three weeks our team conducted 3-5 interviews in order to
+                        define our user and the problem at hand. We worked together to lay out our findings and list
+                        needs to which our product will meet. Once we had a good indication of specific features, we
+                        began to build our prototype. From the data we gathered, we were able to organize it into our
+                        affinity diagarm and empathy map. This information helped us conclude our research with the
+                        creation of our user persona.
+
+                    </p>
+
+                    <p class="big"><span style="color: #895A83; font-weight: bold;">Definition & Ideation</span>
+                    </p>
+
+                    <p class="pMyStory"> Our problem statment concludes as...MyDoctor was designed to achieve a
+                        simplified way for patients to find the correct medical specialist for their needs.
+                        We have observed that users struggle to confidently select a healthcare provider while sorting
+                        through a myriad of options. How might MyDoctor streamline the search for healthcare so that
+                        customers are satisfied with
+                        their selection? We created a value proposition of "The intuitive way to find
+                        the specialized care you need."
+
+
+                    </p>
+                    <p class="big"><span style="color: #895A83; font-weight: bold;">Prototyping</span></p>
+
+                    <p class="pMyStory"> We completed a competitor anaylsis with other similar apps to MyDoctor such as
+                        "ZOCDOC" and "WEBMD". This information helped us form the beginning stages of designing our app
+                        with some early sketches. Once the sketches were complete, we did another several user tests to
+                        test out the over design. There were many iterations that we went forward with changing from the
+                        user
+                        tests.
+                    </p>
+                    <p class="big"><span style="color: #895A83; font-weight: bold;">Testing & Iterating</span></p>
+
+                    <p class="pMyStory"> Now that our changes were completed on our sketches, we went forward with
+                        creating the iOS mockups and final prototype on Figma.
+                    </p>
+                    <p class="big"><span style="color: #895A83; font-weight: bold;">Final Thoughts</span></p>
+
+                    <p class="pMyStory"> Our team really enjoyed working on this project together and watching it
+                        unfold. Our idea began as a doctor app that was able to find people a specific doctor in their
+                        native language. That grew into providing many filter options such as insurance, male/female
+                        doctor, picture, bio, and more, so that our users could narrow down their search easily to find
+                        their perfect doctor.
+
+                        It was amazing how much faster our team could get the research, interviews, and project
+                        completed when working on it together. It was also insightful to be able to share ideas with
+                        each other and brainstorm when problem solving.
+
+                        If we were to launch this app,, we would want to improve it by creating a booking function. This
+                        would allow our users to go one step further past saving their prefered doctor by being able to
+                        book a
+                        time and day to meet with the doctor all through the MyDoctor app. It would save a huge step
+                        or our users and be faster than calling a doctors office to try and schedule an appointment.
+
+                        Our team is happy with the result of our app and we were grateful to have had each other
+                        to help build our UX design skills.
+
+                    </p>
 
 
 
 
 
 
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- This is the footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-sm-3">
+                        <a href="https://www.linkedin.com/in/amanda-heer2290/" type="button"
+                            class="btn btn-outline-secondary btnStyle">LinkedIn</a>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-3">
+                        <a href="https://drive.google.com/file/d/1DqRLTXWOeUZrFO53Ml0_1LGNKiJImzC-/view?usp=share_link"
+                            type="button" class="btn btn-outline-secondary btnStyle">Resume</a>
+                    </div>
+
+                    <div class="col-lg-8 col-md-6 col-sm-6">
+                        Copyright @ 2022 Amanda Heer
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- This is the Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+
+            <!-- This is the JS -->
+            <script src="JS/index.js"></script>
 </body>
 
 </html>

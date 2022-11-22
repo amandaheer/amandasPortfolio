@@ -431,3 +431,11 @@ img.hover-shadow {
 
 /* Media Quary for the Footer: Small Screen */
 @media only screen and (max-width: 600px) {}
+
+
+/* mydoctor page */
+
+.mdlink {
+    text-align: center;
+    color: #895A83;
+}
